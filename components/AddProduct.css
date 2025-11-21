@@ -1,0 +1,197 @@
+/**
+ * Add Product Page Styles
+ */
+
+.add-product-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  background-color: #EAEDED;
+  min-height: calc(100vh - 200px);
+}
+
+.back-button {
+  background-color: #131921;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #232F3E;
+}
+
+.add-product-box {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.add-product-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #131921;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+}
+
+.add-product-logo::first-letter {
+  color: #FF9900;
+}
+
+.add-product-header h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #131921;
+  margin: 0;
+}
+
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #131921;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #A6A6A6;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #FF9900;
+  box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #A6A6A6;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-hint {
+  font-size: 0.75rem;
+  color: #767676;
+  margin-top: 0.25rem;
+}
+
+.error-message {
+  background-color: #FEE;
+  color: #C40000;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  border: 1px solid #FCD;
+}
+
+.success-message {
+  background-color: #DFF2BF;
+  color: #4F8A10;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  border: 1px solid #9FDF9F;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.submit-button {
+  flex: 1;
+  background: linear-gradient(to bottom, #FFD814, #FCD200);
+  border: 1px solid #FCD200;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #131921;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: linear-gradient(to bottom, #F7CA00, #F2C200);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #D5D9D9;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #131921;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancel-button:hover {
+  background-color: #F7FAFA;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .add-product-box {
+    padding: 1.5rem;
+  }
+
+  .add-product-logo {
+    font-size: 1.75rem;
+  }
+
+  .add-product-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+}
+

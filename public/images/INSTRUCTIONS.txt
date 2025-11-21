@@ -1,0 +1,11 @@
+HOW TO ADD YOUR CAMERA PICTURE:
+
+1. Place your camera/webcam image file in this folder (public/images/)
+2. Name it exactly: webcam.jpg
+   (Or if it's a different format: webcam.png, webcam.webp, etc.)
+3. If you use a different filename, update products.js accordingly
+
+Supported formats: .jpg, .jpeg, .png, .webp, .gif
+
+The image will automatically appear in the Webcam HD product card!
+
